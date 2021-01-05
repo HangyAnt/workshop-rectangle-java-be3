@@ -21,6 +21,11 @@ public class Rectangle {
         return this.HEIGHT * this.WIDTH;
     }
 
+    void printRectangle() {
+        System.out.print("Height of Rectangle: " + this.HEIGHT + ", ");
+        System.out.println("Width of Rectangle: " + this.WIDTH);
+    }
+
     int getHeight() {
         return this.HEIGHT;
     }

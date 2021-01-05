@@ -6,10 +6,12 @@ public class Main {
         Rectangle rectangle1 = new Rectangle(5, 8);
         System.out.println("Rectangle1 height: " + rectangle1.getHeight());
         System.out.println("Rectangle1 width: " + rectangle1.getWidth());
+        rectangle1.printRectangle();
         System.out.println("Rectangle1 area: " + rectangle1.calculateArea() + "\n");
         Rectangle rectangle2 = new Rectangle(4, 3, 12);
         System.out.println("Rectangle2 height: " + rectangle2.getHeight());
         System.out.println("Rectangle2 width: " + rectangle2.getWidth());
+        rectangle2.printRectangle();
         System.out.println("Rectangle2 area: " + rectangle2.calculateArea() + "\n");
         RoundedRectangle roundedRectangle = new RoundedRectangle(4, 6, 1);
         System.out.println("RoundedRectangle height: " + roundedRectangle.getHeight());
