@@ -13,10 +13,10 @@ public class Main {
         System.out.println("Rectangle2 width: " + rectangle2.getWidth());
         rectangle2.printRectangle();
         System.out.println("Rectangle2 area: " + rectangle2.calculateArea() + "\n");
-        RoundedRectangle roundedRectangle = new RoundedRectangle(4, 6, 1);
+        Rectangle roundedRectangle = new RoundedRectangle(4, 6, 1);
         System.out.println("RoundedRectangle height: " + roundedRectangle.getHeight());
         System.out.println("RoundedRectangle width: " + roundedRectangle.getWidth());
-        System.out.println("RoundedRectangle radius: " + roundedRectangle.getRoundRadius());
+        System.out.println("RoundedRectangle radius: " + ((RoundedRectangle) roundedRectangle).getRoundRadius());
         roundedRectangle.printRectangle();
         System.out.println("RoundedRectangle area: " + roundedRectangle.calculateArea() + "\n");
     }
