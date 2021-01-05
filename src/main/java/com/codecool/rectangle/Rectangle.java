@@ -22,8 +22,7 @@ public class Rectangle {
     }
 
     void printRectangle() {
-        System.out.print("Height of Rectangle: " + this.HEIGHT + ", ");
-        System.out.println("Width of Rectangle: " + this.WIDTH);
+        System.out.println(this.toString());
     }
 
     int getHeight() {
@@ -32,6 +31,14 @@ public class Rectangle {
 
     int getWidth() {
         return this.WIDTH;
+    }
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "HEIGHT=" + HEIGHT +
+                ", WIDTH=" + WIDTH +
+                '}';
     }
 
 }

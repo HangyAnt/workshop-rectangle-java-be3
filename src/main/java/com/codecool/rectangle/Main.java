@@ -17,6 +17,7 @@ public class Main {
         System.out.println("RoundedRectangle height: " + roundedRectangle.getHeight());
         System.out.println("RoundedRectangle width: " + roundedRectangle.getWidth());
         System.out.println("RoundedRectangle radius: " + roundedRectangle.getRoundRadius());
+        roundedRectangle.printRectangle();
         System.out.println("RoundedRectangle area: " + roundedRectangle.calculateArea() + "\n");
     }
 

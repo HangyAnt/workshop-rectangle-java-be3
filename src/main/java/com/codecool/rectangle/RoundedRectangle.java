@@ -15,7 +15,17 @@ public class RoundedRectangle extends Rectangle {
 
     @Override
     double calculateArea() {
-        return super.calculateArea() - (4 * (ROUND_RADIUS * ROUND_RADIUS)) + (ROUND_RADIUS * ROUND_RADIUS * Math.PI);
+        return super.calculateArea() - (4 * (Math.pow(ROUND_RADIUS, 2))) + (Math.pow(ROUND_RADIUS, 2) * Math.PI);
     }
+
+    @Override
+    public String toString() {
+        return "RoundedRectangle{" +
+                "HEIGHT=" + super.getHeight() +
+                ", WIDTH=" + super.getWidth() +
+                ", ROUND_RADIUS=" + ROUND_RADIUS +
+                '}';
+    }
+
 
 }
