@@ -14,6 +14,7 @@ public class Rectangle {
     Rectangle(int height, int width, int size) {
         this.height = height;
         this.width = width;
+        this.size = size;
     }
 
     int calculateArea() {
