@@ -2,19 +2,19 @@ package com.codecool.rectangle;
 
 public class RoundedRectangle extends Rectangle {
 
-    private int roundRadius;
+    private final int ROUND_RADIUS;
 
-    RoundedRectangle(int height, int width, int roundRadius) {
+    RoundedRectangle(int height, int width, int ROUND_RADIUS) {
         super(height, width);
-        this.roundRadius = roundRadius;
+        this.ROUND_RADIUS = ROUND_RADIUS;
     }
 
     int getRoundRadius() {
-        return this.roundRadius;
+        return this.ROUND_RADIUS;
     }
 
     @Override
     double calculateArea() {
-        return super.calculateArea() - (4 * (roundRadius * roundRadius)) + (roundRadius * roundRadius * Math.PI);
+        return super.calculateArea() - (4 * (ROUND_RADIUS * ROUND_RADIUS)) + (ROUND_RADIUS * ROUND_RADIUS * Math.PI);
     }
 }
