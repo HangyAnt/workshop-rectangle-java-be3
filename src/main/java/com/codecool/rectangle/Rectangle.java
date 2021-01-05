@@ -16,6 +16,10 @@ public class Rectangle {
         this.width = width;
     }
 
+    int calculateArea() {
+        return this.height * this.width;
+    }
+
     int getHeight() {
         return this.height;
     }
