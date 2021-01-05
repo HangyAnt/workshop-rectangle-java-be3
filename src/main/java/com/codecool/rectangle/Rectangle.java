@@ -2,31 +2,31 @@ package com.codecool.rectangle;
 
 public class Rectangle {
 
-    private int height;
-    private int width;
+    private final int HEIGHT;
+    private final int WIDTH;
     private int size;
 
     Rectangle(int height, int width) {
-        this.height = height;
-        this.width = width;
+        this.HEIGHT = height;
+        this.WIDTH = width;
     }
 
     Rectangle(int height, int width, int size) {
-        this.height = height;
-        this.width = width;
+        this.HEIGHT = height;
+        this.WIDTH = width;
         this.size = size;
     }
 
-    int calculateArea() {
-        return this.height * this.width;
+    double calculateArea() {
+        return this.HEIGHT * this.WIDTH;
     }
 
     int getHeight() {
-        return this.height;
+        return this.HEIGHT;
     }
 
     int getWidth() {
-        return this.width;
+        return this.WIDTH;
     }
 
 }
